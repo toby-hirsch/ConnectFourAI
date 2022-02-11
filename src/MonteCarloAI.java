@@ -79,12 +79,7 @@ public abstract class MonteCarloAI implements ConnectFourAI {
         if (d > depth / 2) {
             cache.put(new KeyWrapper(board), new BoardEval(res, d));
         }
-        /*
-         * if (d == depth && cacheSol && res != cached) { fuckupCount++; } if (d ==
-         * depth) { cachedCount++; cache.put(hash, new BoardEval(game.getBoard(), res));
-         * }
-         */
-
+        
         return res;
     }
 
